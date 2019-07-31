@@ -19,19 +19,19 @@ namespace Robots
 		bool active_leg[6]{ true,true,true,true,true,true };
 		double margin_offset{0.01};//meter
 		double alignPee[18]
-        {  -0.30,   -0.48,   -0.52,
-           -0.60,   -0.48,    0,
-           -0.30,   -0.48,    0.52,
-            0.30,   -0.48,   -0.52,
-            0.60,   -0.48,    0,
-            0.30,   -0.48,    0.52 };
+        {  -0.275,   -0.43,   -0.476,
+           -0.550,   -0.43,    0,
+           -0.275,   -0.43,    0.476,
+            0.275,   -0.43,   -0.476,
+            0.550,   -0.43,    0,
+            0.275,   -0.43,    0.476 };
         double recoverPee[18]
-        {  -0.30,   -0.55,   -0.52,
-           -0.60,   -0.55,    0,
-           -0.30,   -0.55,    0.52,
-            0.30,   -0.55,   -0.52,
-            0.60,   -0.55,    0,
-            0.30,   -0.55,    0.52 };
+        {  -0.275,   -0.48,   -0.476,
+           -0.550,   -0.48,    0,
+           -0.275,   -0.48,    0.476,
+            0.275,   -0.48,   -0.476,
+            0.550,   -0.48,    0,
+            0.275,   -0.48,    0.476 };
 		};
 	auto recoverParse(const std::string &cmd, const std::map<std::string, std::string> &params, aris::core::Msg &msg_out)->void;
 	auto recoverGait(aris::dynamic::Model &model, const aris::dynamic::PlanParamBase & plan_param)->int;
